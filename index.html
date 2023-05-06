@@ -216,11 +216,12 @@
   <script>
     console.log(new Date());
     //JS 
-    layui.use(['element', 'layer', 'util'], function () {
-      var element = layui.element;
-      var layer = layui.layer;
-      var util = layui.util;
-      var $ = layui.$;
+    layui.use(['element', 'layer', 'util','carousel'], function () {
+      var element = layui.element
+       ,layer = layui.layer
+      ,util = layui.util
+      ,carousel = layui.carousel
+      ,$ = layui.$;
       element.render('nav', 'demo-filter-nav');
       // 渲染 - 常规轮播
       carousel.render({
