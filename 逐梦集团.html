@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>逐梦集团</title>
+        <link rel="shortcut icon" href="img/逐梦集团徽标2.ico" type="image/x-icon">
+        <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//cdn.staticfile.org/layui/2.8.1/css/layui.css" rel="stylesheet">
+  <link href="layui/css/layui.css" rel="stylesheet">
+  <script src="layui/layui.js"></script>
+    </head>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        a:visited{
+            color:rgb(11, 15, 15);
+        }
+        a:hover{
+            color:rgba(0, 89, 255, 0.774);
+        }
+    </style>
+    <body style="background-image:url(img/背景1.jpg);background-size: cover;background-attachment: fixed;">
+        <div class="layui-layout layui-layout-admin">
+            <div class="layui-header">
+              <div class="layui-logo layui-hide-xs layui-bg-black">layout demo</div>
+              <!-- 头部区域（可配合layui 已有的水平导航） -->
+              <ul class="layui-nav layui-layout-left">
+                <!-- 移动端显示 -->
+                <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+                  <i class="layui-icon layui-icon-spread-left"></i>
+                </li>
+                <li class="layui-nav-item layui-hide-xs"><a href="javascript:;">nav 1</a></li>
+                <li class="layui-nav-item layui-hide-xs"><a href="javascript:;">nav 2</a></li>
+                <li class="layui-nav-item layui-hide-xs"><a href="javascript:;">nav 3</a></li>
+                <li class="layui-nav-item">
+                  <a href="javascript:;">nav groups</a>
+                  <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">menu 11</a></dd>
+                    <dd><a href="javascript:;">menu 22</a></dd>
+                    <dd><a href="javascript:;">menu 33</a></dd>
+                  </dl>
+                </li>
+              </ul>
+              <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item layui-hide layui-show-sm-inline-block">
+                  <a href="javascript:;">
+                    <img src="//unpkg.com/outeres@0.0.10/img/layui/icon-v2.png" class="layui-nav-img">
+                    tester
+                  </a>
+                  <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">Your Profile</a></dd>
+                    <dd><a href="javascript:;">Settings</a></dd>
+                    <dd><a href="javascript:;">Sign out</a></dd>
+                  </dl>
+                </li>
+                <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+                  <a href="javascript:;">
+                    <i class="layui-icon layui-icon-more-vertical"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="layui-side layui-bg-black">
+              <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                  <li class="layui-nav-item layui-nav-itemed">
+                    <a class="" href="javascript:;">menu group 1</a>
+                    <dl class="layui-nav-child">
+                      <dd><a href="javascript:;">menu 1</a></dd>
+                      <dd><a href="javascript:;">menu 2</a></dd>
+                      <dd><a href="javascript:;">menu 3</a></dd>
+                      <dd><a href="javascript:;">the links</a></dd>
+                    </dl>
+                  </li>
+                  <li class="layui-nav-item">
+                    <a href="javascript:;">menu group 2</a>
+                    <dl class="layui-nav-child">
+                      <dd><a href="javascript:;">list 1</a></dd>
+                      <dd><a href="javascript:;">list 2</a></dd>
+                      <dd><a href="javascript:;">超链接</a></dd>
+                    </dl>
+                  </li>
+                  <li class="layui-nav-item"><a href="javascript:;">click menu item</a></li>
+                  <li class="layui-nav-item"><a href="javascript:;">the links</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="layui-body">
+              <!-- 内容主体区域 -->
+              <div style="padding: 15px;">
+                <blockquote class="layui-elem-quote layui-text">
+                  Layui 框体布局内容主体区域
+                </blockquote>
+                <div class="layui-card layui-panel">
+                  <div class="layui-card-header">
+                    下面是充数内容，为的是出现滚动条
+                  </div>
+                  <div class="layui-card-body"></br>
+                    <table>
+                        <tr bgcolor="009999">
+                            <th><b style="font-size: 30px;"><a name="jituan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;逐梦集团简介</a></b></th>
+                        </tr>
+                    </table>
+                    <div>
+                        <table>
+                            <tr bgcolor="99FF99">
+                                <th><b style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;董事长</b></th>
+                            </tr>
+                        </table>
+                        <table border="1px">
+                            <tr>
+                                <th style="font-size: 20px;background-color: rgba(228, 228, 222, 0.541);"><img src="img\青春无畏逐威扬梦.png" height="60"> </th>
+                                <th style="font-size: 30px;background-color: rgba(228, 228, 222, 0.541);">集团董事长：深渊（昵称）</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <br/>
+                    <div>
+                        <table>
+                            <tr bgcolor="99FF99">
+                                <th><b style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目标/格言/信仰</b></th>
+                            </tr>
+                        </table>
+                        <table border="1px" height="120">
+                            <tr >
+                                <th><h2 align="center" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用未来思考今天，用今天成就未来。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+                                <th><h2 align="center" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;即使是万丈深渊，下去也是前程万里。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2></th>
+                            </tr>
+                            <tr >
+                                <th><h2 align="center">淳朴务实|锲而不舍|实践创新</h2></th>
+                                <th><h2 align="center" >星河皆是你，所念皆星河。</h2></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <br/>
+                    <div>
+                        <table>
+                            <tr bgcolor="99FF99">
+                                <th><b style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;集团旗下</b></th>
+                            </tr>
+                        </table>
+                        <table align="center" width="66%" height="200" align="center" border="1px" cellpadding="10%">
+                            <br/>
+                            <tr align="center" height="36" bgcolor="#87cefa">
+                                <th colspan="8" style="font-size: 30px;">逐梦集团</th>
+                            </tr>
+                            <tr height="36" bgcolor="00FFCC">
+                                <th>工作室（公司）</th>
+                                <th colspan="3">CXAY</th>
+                                <th colspan="4">CYX</th>
+                            </tr>
+                            <tr align="center" height="36" bgcolor="66FFCC">
+                                <th rowspan="2"style="font-size: 20px;"><sub>品牌</sub>/<sup>书目</sup></th>
+                                <th rowspan="2">品牌</th>
+                                <td>Chasm</td>
+                                <td>Abyss</td>
+                                <th rowspan="2">书目</th>
+                                <td>《二十年后的家乡》科幻文</td>
+                                <td>《荒岛历险记》短篇探险小说</td>
+                                <td>......</td>
+                            </tr>
+                            <tr align="center" height="36" bgcolor="66FFCC">
+                                <td>Chasm X</td>
+                                <td>YUniverse</td>
+                                <td>《夜路》微型小说</td>
+                                <td>《星河探险队之荒岛探途》中篇探险小说</td>
+                                <td>......</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <h5><br/></h5>
+                <div style="border: 5px double #eee"> 
+                  <table>
+                    <tr bgcolor="009999">
+                        <th><b style="font-size: 30px;"><a name="pinpai">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司/品牌简介</a></b></th>
+                    </tr>
+                </table>
+                <div>
+                    <table>
+                        <tr bgcolor="99FF99">
+                            <th><b style="font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一部分</b></th>
+                        </tr>
+                    </table>
+                    <table align="center" width="75%" height="222" align="center" border="1px" cellpadding="10%">
+                        <br/>
+                        <tr align="center" height="36" bgcolor="#87cefa">
+                            <th colspan="4" style="font-size: 20px;">一览表（部分公司/品牌）</th>
+                        </tr>
+                        <tr height="36" bgcolor="00FFCC">
+                            <th>   </th>
+                            <th>Chasm</th>
+                            <th>CXAY</th>
+                            <th>CYX</th>
+                        </tr>
+                        <tr align="center" height="36" bgcolor="66FFCC">
+                            <th>链接</th>
+                            <td alt="first OS" title="first OS"><a href="https://shequ.codemao.cn/work/174642953" target="_blank">first OS</a></td>
+                            <td alt="CXAY工作室" title="CXAY工作室"><a href="https://shequ.codemao.cn/work_shop/19149" target="_blank">工作室</td>
+                            <td alt="CYX图书" title="CYX图书"><a href="https://shequ.codemao.cn/wiki/novel/cover/171543" target="_blank">《星河探险队之荒岛探途》</td>
+                        </tr>
+                        <tr align="center" height="36" bgcolor="66FFCC">
+                            <th>中译</th>
+                            <td>深渊</td>
+                            <td>CXAY工作室</td>
+                            <td>崔宇轩</td>
+                        </tr>
+                        <tr align="center" height="36" bgcolor="66FFCC">
+                            <th>徽标</th>
+                            <td><img src="img\徽标.png" height="100"/></td>
+                            <td><img src="img\CXAY徽标.png" height="100"/></td>
+                            <td><img src="img\CYX徽标.png" height="55"/></td>
+                        </tr>
+                    </table>
+                </div>
+                <h5><br/></h5>
+                  </div>
+                </div>
+                <br><br>
+              </div>
+            </div>
+            <div class="layui-footer">
+              <!-- 底部固定区域 -->
+              底部固定区域
+            </div>
+          </div>
+          <script src="//cdn.staticfile.org/layui/2.8.1/layui.js"></script>
+          <script>
+          //JS 
+          layui.use(['element', 'layer', 'util'], function(){
+            var element = layui.element;
+            var layer = layui.layer;
+            var util = layui.util;
+            var $ = layui.$;
+            
+            //头部事件
+            util.event('lay-header-event', {
+              menuLeft: function(othis){ // 左侧菜单事件
+                layer.msg('展开左侧菜单的操作', {icon: 0});
+              },
+              menuRight: function(){  // 右侧菜单事件
+                layer.open({
+                  type: 1,
+                  title: '更多',
+                  content: '<div style="padding: 15px;">处理右侧面板的操作</div>',
+                  area: ['260px', '100%'],
+                  offset: 'rt', // 右上角
+                  anim: 'slideLeft', // 从右侧抽屉滑出
+                  shadeClose: true,
+                  scrollbar: false
+                });
+              }
+            });
+          });
+          </script>
+    </body>
+</html>
