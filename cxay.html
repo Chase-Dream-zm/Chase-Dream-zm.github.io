@@ -16,275 +16,52 @@
     }
 
     a:hover {
-      color: rgb(0, 0, 0);
+      color: rgb(136, 201, 255);
     }
   </style>
 </head>
-
 <body style="background-image:url(img/花朵蓝色背景.jpg);background-size: cover;background-attachment: fixed;">
-  <div class="layui-layout layui-layout-admin">
-    <div class="layui-header">
-      <div class="layui-logo layui-hide-xs layui-bg-black">Chase Dream</div>
-      <!-- 头部区域（可配合layui 已有的水平导航） -->
-      <ul class="layui-nav layui-layout-left">
-        <!-- 移动端显示 -->
-        <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
-          <i class="layui-icon layui-icon-spread-left"></i>
-        </li>
-        <li class="layui-nav-item layui-hide-xs"><a href="#top">首页</a></li>
-        <li class="layui-nav-item layui-hide-xs"><a href="cxay.html">CXAY工作室</a></li>
-        <li class="layui-nav-item layui-hide-xs"><a href="cyx.html">CYX图书</a></li>
-      </ul>
-      <ul class="layui-nav layui-layout-right">
-        <li class="layui-nav-item layui-hide layui-show-sm-inline-block">
-          <a href="javascript:;">
-            <img src="img/逐梦集团黑色经典.png" class="layui-nav-img">
-            个人
-          </a>
-          <dl class="layui-nav-child">
-            <dd><a href="javascript:;">个人资料</a></dd>
-            <dd><a href="javascript:;">设置</a></dd>
-            <dd><a href="javascript:;">注销</a></dd>
-          </dl>
-        </li>
-        <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
-          <a href="javascript:;">
-            <i class="layui-icon layui-icon-more-vertical"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="layui-side layui-bg-black">
-      <div class="layui-side-scroll">
-        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-        <ul class="layui-nav layui-nav-tree" lay-filter="test">
-            <li class="layui-nav-item"><a href="#top">第一部分 海报</a></li>
-            <li class="layui-nav-item layui-nav-itemed">
-              <li class="layui-nav-item"><a href="javascript:;">第二部分 简介</a></li>
-            <li class="layui-nav-item layui-nav-itemed">
-              <a href="javascript:;">第三部分  链接</a>
-              <dl class="layui-nav-child">
-                <dd><a href="javascript:;">工作室链接</a></dd>
-                <dd><a href="javascript:;">CXAY工作室官网</a></dd>
-              </dl>
-            </li>
-            <li class="layui-nav-item"><a href="javascript:;">第四部分 优质作品</a></li>
-            <li class="layui-nav-item"><a href="javascript:;">第五部分 致谢</a></li>
-          </ul>
-      </div>
-    </div>
-    <div class="layui-body">
-      <!-- 内容主体区域 -->
-      <div style="padding: 15px;">
-        <blockquote class="layui-elem-quote layui-text">
-          Chase Dream&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为梦想奋斗。
-        </blockquote>
-        <div class="layui-card layui-panel">
-          <div class="layui-card-body">
-            <div class="layui-carousel" id="ID-carousel-demo-1">
-                <div carousel-item>
-                    <div align="center""><img src="img/CXAY简约经典.png" style="height: 100%;"></div>
-                    <div align="center"></br></br></br></br></br></br></br></br><h1>漫漫人生路，相知有几人。</h1></div>
-                    <div align="center"><img src="img/CXAY圆形彩色.png" style="height: 100%;"></div>
-                    <div align="center"></br></br></br></br></br></br></br><h1>我们，在路上，勿忘初心。</h1></br><h1>找寻最初的梦想和微弱的希望。</h1></div>
-                    <div align="center"><img src="img/CXAY绿色.png" style="height: 100%;"></div>
-                    <div align="center"></br></br></br></br></br></br></br><h1>任尘世繁华，唯有守护你的一切，</h1></br><h1>才是我此生唯一的使命。</h1></div>
-                    <div align="center"><img src="img/CXAY蓝色.png" style="height: 100%;"></div>
-                    <div align="center"></br></br></br></br></br></br></br><h1>星河皆是你，所念皆星河。</h1></div>
-                  </div>
-            </div>
-            <!-- <div>
-              <div>
-                <table align="center" width="75%" height="100" align="center" border="1px">
-                  </br>
-                  <tr align="center" height="36">
-                    <th colspan="3" style="font-size: 15px;">前言</th>
-                  </tr>
-                  <tr height="36">
-                    <th>梦开始的地方</th>
-                    <th>积极进取</th>
-                    <th>星辰大海</th>
-                  </tr>
-                  <tr align="center" height="36">
-                    <td>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22年寒假期间我在编程</br>猫平台上开辟了一片属于我</br>自己的天地。在那里，我做</br>了自己的作品，创建了自己</br>的团队(虽然目前没有成员)
-                    </td>
-                    <td>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在23年初，我不断宣传</br>我的工作室及集团努力去组</br>件自己的团队。把作品做到</br>最好，坚持“
-                      既然来了就做</br>&nbsp;&nbsp;&nbsp;到最好 ”的原则，努力进取。</td>
-                    <td>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23年，非同寻常的一年</br>这一年已经快过去了一半时</br>间了。展望未来，拥有自己</br>的团队、创建自己的官网并</br>取得优异的成绩，美好的未</br>来。我们的星辰大海……&nbsp;&nbsp;&nbsp;
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </div> -->
-          </div>
-        </div>
-        <a name="jituanjianjie">&nbsp;</a>
-        <blockquote class="layui-elem-quote layui-text">
-          简介>>集团
-        </blockquote>
-        <div class="layui-card layui-panel">
-          <div class="layui-card-body">
-            <div class="layui-carousel" id="ID-carousel-demo-1"></div>
-            <div>
-              <h1><img src="img/CD黑色白框.png" style="height: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;青春无畏，向梦奔行————</h1>
-              <hr>
-              <div>
-                <h2></br>第一部分&nbsp;&nbsp;&nbsp;基本信息</h2>
-                <h3></br>名称：逐梦集团（Chase Dream Group)</br>成立时间：2023年初</br>总部地址：中国山东省潍坊市高新区新城街道</br>主要领域：信息技术、电子科技、文章出版等</br></h3>
-              </div>
-              <br><hr>
-              <h2><br> 第二部分&nbsp;&nbsp;&nbsp;集团构架</h2>
-              <br>
-              <div>
-                <table width="65%" height="150" align="center" border="1px">
-                  <tr align="center" height="36">
-                    <th colspan="2" style="font-size:30px; color: rgb(94, 169, 255);">Chase Dream 逐梦集团</th>
-                  </tr>
-                  <tr height="36">
-                    <th style="font-size:20px; color: rgb(94, 141, 255);">CXAY</th>
-                    <th style="font-size:20px; color: rgb(94, 141, 255);">CYX</th>
-                  </tr>
-                  <tr>
-                    <td style="font-size:20px; color: rgb(94, 195, 255);">CXAY全称Chasm X Abyss YUniverse，逐梦集团互联网科技工作室。</td>
-                    <td style="font-size:20px; color: rgb(94, 195, 255);">CYX图书,逐梦集团图书出版设，主要领域于写作及出版文章。</td>
-                  </tr>
-                </table>
-              </div>
-              <br>
-              <hr>
-              <div>
-                <h2></br>第三部分&nbsp;&nbsp;&nbsp;集团文化</h2>
-                <br>
-                <h4 style="font-size:19px; color: rgb(255, 170, 59);">价值观</h4>
-                <hr width="150">
-                <h3 style="font-size:20px; color: rgb(0, 0, 0);">努力</h3>
-                <h5 style="color: rgba(0, 102, 255, 0.719);">努力完成任务，勤奋成就未来。<br>Work hard to complete tasks, work hard to achieve the future.</h5>
-                <h3 style="font-size:20px; color: rgb(0, 0, 0);">用心</h3>
-                <h5 style="color: rgba(0, 102, 255, 0.719);">既然来了，就要做到最好。<br>Since we have arrived, we must do our best.</h5>
-                <h3 style="font-size:20px; color: rgb(0, 0, 0);">进取</h3>
-                <h5 style="color: rgba(0, 102, 255, 0.719);">积极进取，突破困难。<br>Be proactive and overcome difficulties.</h5>
-                <h3 style="font-size:20px; color: rgb(0, 0, 0);">创新</h3>
-                <h5 style="color: rgba(0, 102, 255, 0.719);">创造未来，成就未来。<br>Create the future, achieve the future.</h5>
-                <h3 style="font-size:20px; color: rgb(0, 0, 0);">乐观</h3>
-                <h5 style="color: rgba(0, 102, 255, 0.719);">即使是万丈深渊，下去也是前程万里。<br>Even if it is a vast abyss, there is still a long way to go.</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <blockquote class="layui-elem-quote layui-text">
-          <a name="gsppjianjie">&nbsp;</a>简介>>公司/品牌
-        </blockquote>
-        <div class="layui-card layui-panel">
-          <div class="layui-card-body">
-            <div class="layui-carousel" id="ID-carousel-demo-1"></div>
-            <div>
-              <h1><img src="img/CXAY圆形彩色.png" style="height: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想成就未来————</h1>
-              <div>
-                <h2></br>第一部分&nbsp;&nbsp;&nbsp;CXAY工作室</h2>
-                <h3></br>名称：CXAY（ChasmX Abyss YUniverse Group)</br>成立时间：2023年初</br>总部地址：中国山东省潍坊市高新区新城街道</br>主要领域：信息技术、电子科技等</br></h3>
-              </div>
-              <br><hr>
-              <h1><img src="img/CYX彩色.png" style="height: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下笔如有神————</h1>
-              <div>
-                <br>
-                <h2></br>第二部分&nbsp;&nbsp;&nbsp;CYX图书</h2>
-
-                <h3></br>名称：CYX（CYX Group)</br>成立时间：2023年初</br>总部地址：中国山东省潍坊市高新区新城街道</br>主要领域：文章出版、发表等</br></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <blockquote class="layui-elem-quote layui-text">
-          <a name="LJCXAY">&nbsp;</a>链接>>编程猫平台CXAY工作室
-        </blockquote>
-        <div class="layui-card layui-panel">
-          <div class="layui-card-body">
-            <div class="layui-carousel" id="ID-carousel-demo-1"></div>
-            <div>
-              <h1><img src="img/CXAY蓝色有底.png" style="height: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CXAY工作室</h1>
-              <div>
-                <h2></br>CXAY工作室编程猫平台网址</h2>
-                <h3><a href="https://shequ.codemao.cn/work_shop/19149" target="_blank">https://shequ.codemao.cn/work_shop/19149</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <blockquote class="layui-elem-quote layui-text">
-          <a name="LJCXAYGW">&nbsp;</a>链接>>CXAY工作室官网
-        </blockquote>
-        <div class="layui-card layui-panel">
-          <div class="layui-card-body">
-            <div class="layui-carousel" id="ID-carousel-demo-1"></div>
-            <div>
-              <h1><img src="img/CXAY简约经典.png" style="height: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CXAY工作室官网</h1>
-              <div>
-                <h2></br>CXAY工作室官网网址</h2>
-                <h3><a href="https://shequ.codemao.cn/work_shop/19149" target="_blank">https://shequ.codemao.cn/work_shop/19149</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <blockquote class="layui-elem-quote layui-text">
-          <a name="LJCYXGW">&nbsp;</a>链接>>CYX图书官网
-        </blockquote>
-        <div class="layui-card layui-panel">
-          <div class="layui-card-body">
-            <div class="layui-carousel" id="ID-carousel-demo-1"></div>
-            <div>
-              <h1><img src="img/CXAY蓝色有底.png" style="height: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CXAY工作室</h1>
-              <div>
-                <h2></br>CXAY工作室编程猫平台网址</h2>
-                <h3><a href="https://shequ.codemao.cn/work_shop/19149" target="_blank">https://shequ.codemao.cn/work_shop/19149</a></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br><br>
+  <div>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-this"><a href="#top">CXAY</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">常规</a>
+      </li>
+      <li class="layui-nav-item"><a href="">导航</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">子级</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">菜单1</a></dd>
+          <dd><a href="">菜单2</a></dd>
+          <dd><a href="">菜单3</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">选项</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">选项1</a></dd>
+          <dd class="layui-this"><a href="">选项2</a></dd>
+          <dd><a href="">选项3</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">演示</a></li>
+    </ul>
   </div>
-  </div>
-  </div>
-
-  <script>
-    console.log(new Date());
-    //JS 
-    layui.use(['element', 'layer', 'util','carousel'], function () {
-      var element = layui.element
-       ,layer = layui.layer
-      ,util = layui.util
-      ,carousel = layui.carousel
-      ,$ = layui.$;
-      element.render('nav', 'demo-filter-nav');
-      // 渲染 - 常规轮播
-      carousel.render({
-        elem: '#ID-carousel-demo-1',
-        width: 'auto',
-        height: '390px'
-      });
-      //头部事件
-      util.event('lay-header-event', {
-        menuLeft: function (othis) { // 左侧菜单事件
-          layer.msg('展开左侧菜单的操作', { icon: 0 });
-        },
-        menuRight: function () {  // 右侧菜单事件
-          layer.open({
-            type: 1,
-            title: '更多',
-            content: '<div style="padding: 15px;">如果有问题请联系：</br>shequ.codemao.cn/user/779564569</br></br>广告：</br>欢迎大家加入CXAY工作室</br>https://shequ.codemao.cn/work_shop</br>/19149</div>',
-            area: ['260px', '100%'],
-            offset: 'rt', // 右上角
-            anim: 'slideLeft', // 从右侧抽屉滑出
-            shadeClose: true,
-            scrollbar: false
-          });
-        }
-      });
-    });
-  </script>
+  <div class="layui-card layui-panel">
+    <div class="layui-card-body">
+      <div class="layui-carousel" id="ID-carousel-demo-1"></div>
+      <div>
+        <br><br>
+        <h1 align="right" style="font-size:50px; color: rgb(0, 0, 0);">CXAY工作室</h1>
+        <br>
+        <h1 align="right" style="color: rgba(173, 173, 173, 0.904);">Chasm X Abyss YUniverse Group</h1>
+        <h3 align="right" style="color: rgba(146, 146, 146, 0.712);">漫漫人生路，相知有几人</h3>
+        <br>
+        <h2 align="right"><a href="https://shequ.codemao.cn/work_shop/19149" target="_blank">编程猫平台工作室</a></h2>
+     </div>
+    </div>
+   </div>
+   
 </body>
 
 </html>
