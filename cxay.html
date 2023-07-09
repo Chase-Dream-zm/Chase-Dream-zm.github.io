@@ -21,28 +21,41 @@
   </style>
 </head>
 <body style="background-image:url(img/花朵蓝色背景.jpg);background-size: cover;background-attachment: fixed;">
-  <div>
-    <ul class="layui-nav">
-      <li class="layui-nav-item layui-this"><a href="#top">CXAY</a></li>
-      <li class="layui-nav-item">
-        <a href="chase-dream-zm.github.io/cxay.html">首页</a>
-      </li>
-      <li class="layui-nav-item"><a href="">Chasm X</a></li>
-      <li class="layui-nav-item"><a href="">Abyss</a></li>
-      <li class="layui-nav-item"><a href="">YUniverse</a></li>
-    </ul>
-    <ul class="layui-nav layui-layout-right">
-      <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
-        <a href="javascript:;">
-          <i class="layui-icon layui-icon-more-vertical"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-header">
+        <div class="layui-logo layui-hide-xs layui-bg-black">CXAY&nbsp;&nbsp;&nbsp;Group</div>
+        <!-- 头部区域（可配合layui 已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left">
+          <!-- 移动端显示 -->
+          <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+            <i class="layui-icon layui-icon-spread-left"></i>
+          </li>
+          <li class="layui-nav-item layui-hide-xs"><a href="#top">首页</a></li>
+          <li class="layui-nav-item"><a href="">Chasm X</a></li>
+          <li class="layui-nav-item"><a href="">Abyss</a></li>
+          <li class="layui-nav-item"><a href="">YUniverse</a></li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+          <li class="layui-nav-item">
+           <a href="javascript:;">导航</a>
+           <dl class="layui-nav-child">
+             <dd><a href="#jianjie">简介</a></dd>
+              <dd><a href="#pinpai">品牌与领域</a></dd>
+              <dd><a href="">菜单3</a></dd>
+           </dl>
+          </li>
+          <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+            <a href="javascript:;">
+              <i class="layui-icon layui-icon-more-vertical"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   <div class="layui-card layui-panel">
    <div class="layui-card-body">
     <div>
-      <br><br>
+      <br><br><br><br>
       <h1 align="right" style="font-size:50px; color: rgb(0, 0, 0);">CXAY工作室</h1>
       <br>
       <h1 align="right" style="color: rgba(66, 66, 66, 0.904);">Chasm X Abyss YUniverse Group</h1>
@@ -109,11 +122,22 @@
     <div class="layui-card-body">
       <div class="layui-carousel" id="ID-carousel-demo-1"></div>
       <div>
-        <h2 align="center" style="color: rgba(100, 100, 100, 0.712);">漫漫人生路，相知有几人</h2>
+        <h2 align="center" style="color: rgba(66, 66, 66, 0.904);">——Chasm X Abyss YUniverse Group——</h2>
+        <br>
+        <h3 align="center" style="color: rgba(100, 100, 100, 0.712);">漫漫人生路，相知有几人</h3>
+        <br>
         <div align="center"><img src="img/CXAY简约经典.png" style="height: 100%;" align="center"></div>
+        <br>
+        <h1 align="center" style="color: rgb(45, 79, 99);">工作室创于2023年初</h1>
+        <br>
+        <h6 align="center">归属于逐梦集团</h6>
+        <br>
      </div>
     </div>
    </div>
+   <blockquote class="layui-elem-quote layui-text">
+     <a name="pinpai"></a><div align="center"><h1>——品牌与领域——</h1></div>
+   </blockquote>
 </body>
 <script>
   console.log(new Date());
