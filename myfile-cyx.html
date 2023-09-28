@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>myfile</title>
+  <link rel="shortcut icon" href="img/纯粹.jpeg" type="image/x-icon">
+  <link href="layui/css/layui.css" rel="stylesheet">
+  <script src="layui/layui.js"></script>
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: rgb(53, 53, 53);
+    }
+
+    a:hover {
+      color: rgb(115, 192, 255);
+    }
+  </style>
+</head>
+<body style="background-image:url(img/花朵蓝色背景.jpg);background-size: cover;background-attachment: fixed;"lay-on="test-more-lockscreen">
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-header layui-bg-gray">
+        <div class="layui-logo layui-hide-xs layui-bg-green">myfile</div>
+        <!-- 头部区域（可配合layui 已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left layui-bg-gray">
+          <!-- 移动端显示 -->
+          <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+            <i class="layui-icon layui-icon-spread-left"></i>
+          </li>
+          <li class="layui-nav-item layui-hide-xs"><a href="#top">首页</a></li>
+        </ul>
+      </div>
+    </div>
+<style>
+.class-demo-layer-lockscreen{background: url(Chase-Dream-zm.github.io/img/%E6%98%9F%E7%A9%BA%E9%9B%AA%E5%B1%B1%E6%9D%BE%E6%A0%91.jpg) #16b777; background-size: cover; color: rgba(255,255,255,1);}
+.class-demo-layer-lockscreen .layui-form{position: absolute; top: 50%; left: 50%; width: 300px; transform: translate(-50%, -50%);}
+.class-demo-layer-lockscreen .layui-form > div{margin-bottom: 8px;}
+.class-demo-layer-pin{width: 100%; height: 38px; padding: 0 8px; background-color: rgba(255,255,255,.8); border: none; border-radius: 3px; box-sizing: border-box;}
+.class-demo-layer-lockscreen .layui-input-suffix{pointer-events: auto; background-color: rgba(0,0,0,.5); border-radius: 0 3px 3px 0;}
+.class-demo-layer-lockscreen .layui-input-suffix .layui-icon-right{cursor: pointer; color: #fff;}
+</style>
+<script>
+layui.use(function(){
+  var layer = layui.layer;
+  var util = layui.util;
+  var form = layui.form;
+  var $ = layui.$;
+  // 事件
+      layer.open({
+        type: 1,
+        title: false, // 禁用标题栏
+        closeBtn: false, // 禁用默认关闭按钮
+        area: ['100%', '100%'],
+        scrollbar: false, // 暂时屏蔽浏览器滚动条
+        anim: -1, // 禁用弹出动画
+        isOutAnim: false, // 禁用关闭动画
+        id: 'ID-layer-demo-inst',
+        skin: 'class-demo-layer-lockscreen', // className
+        content: ['<div class="layui-form">',
+          '<div class="layui-input-wrap">',
+            '<input type="password" class="class-demo-layer-pin" lay-affix="eye">',
+            '<div class="layui-input-suffix">',
+              '<i class="layui-icon layui-icon-right" id="ID-layer-demo-unlock"></i>',
+            '</div>',
+          '</div>',
+          '<div>输入密码后回车，即可解锁</div>',
+        '</div>'].join(''),
+        success: function(layero, index){
+          var input = layero.find('input');
+          var PASS = 'cyx101215';
+          
+          form.render(); // 表单组件渲染
+          input.focus();
+          // 点击解锁按钮
+          var elemUnlock = layero.find('#ID-layer-demo-unlock');
+          elemUnlock.on('click', function(){
+            if($.trim(input[0].value) === PASS){
+              layer.close(index);
+              layer.closeLast('dialog'); // 关闭最新打开的信息框
+            } else {
+              layer.msg('密码输入有误', {offset: '16px', anim: 'slideDown'})
+              input.focus();
+            }
+          });
+          // 回车
+          input.on('keyup', function(e){
+            var elem = this;
+            var keyCode = e.keyCode;
+            if(keyCode === 13){
+              elemUnlock.trigger('click');
+            }
+          });
+        }
+      })
+});
+
+layer.open({
+              type: 1, // page 层类型
+              area: ['300px', '200px'],
+              title: '欢迎',
+              shade: 0.7, // 遮罩透明度
+              shadeClose: true, // 点击遮罩区域，关闭弹层
+              anim: 0, // 0-6 的动画形式，-1 不开启
+              content: '<div style="padding: 32px;">欢迎回来，个人网络U盘</div>'
+            });
+</script>
+    <br><br><br><br><br>
+    <blockquote class="layui-elem-quote layui-text">
+      <div align="center"><h2>网络U盘</h2></div>
+     </blockquote>
+      <div class="layui-card layui-panel">
+        <div class="layui-card-body">
+          <div class="layui-carousel" id="ID-carousel-demo-1"></div>
+          <div align="center">
+            </div>
+          </div>
+        </div>
+</body>
+</html>
