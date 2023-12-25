@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -439,6 +439,489 @@
       </div>
     </div>
    </div>
+</body>
+<script>
+  console.log(new Date());
+  //JS 
+  layui.use(['element', 'layer', 'util','carousel'], function () {
+    var element = layui.element
+     ,layer = layui.layer
+    ,util = layui.util
+    ,carousel = layui.carousel
+    ,$ = layui.$;
+    element.render('nav', 'demo-filter-nav');
+      // 渲染 - 常规轮播
+      carousel.render({
+        elem: '#ID-carousel-demo-1',
+        width: 'auto',
+        height: '390px'
+      });
+    //头部事件
+    util.event('lay-header-event', {
+      menuLeft: function (othis) { // 左侧菜单事件
+        layer.msg('展开左侧菜单的操作', { icon: 0 });
+      },
+      menuRight: function () {  // 右侧菜单事件
+        layer.open({
+          type: 1,
+          title: '更多',
+          content: '<div style="padding: 20px;">联系方式：</br>邮箱：2174172727@qq.com<br>QQ：2174172727</br>微信：wf-cyx<br><br>逐梦集团官网：https://chase-dream-zm.github.io/</div>',
+          area: ['260px', '100%'],
+          offset: 'rt', // 右上角
+          anim: 'slideLeft', // 从右侧抽屉滑出
+          shadeClose: true,
+          scrollbar: false
+        });
+      }
+    });
+  });
+</script>
+</html>
+ -->
+
+<!--  新春特别版 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CXAY Group</title>
+  <link rel="shortcut icon" href="img/CHASM蓝色经典.png" type="image/x-icon">
+  <link href="layui/css/layui.css" rel="stylesheet">
+  <script src="layui/layui.js"></script>
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: rgb(53, 53, 53);
+    }
+
+    a:hover {
+      color: rgb(115, 192, 255);
+    }
+  </style>
+</head>
+<body style="background-image:url(img/春节背景1.png);background-size: cover;background-attachment: fixed;">
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-header layui-bg-red">
+        <div class="layui-logo layui-hide-xs layui-bg-red">CXAY&nbsp;&nbsp;&nbsp;Group</div>
+        <!-- 头部区域（可配合layui 已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left layui-bg-red">
+          <!-- 移动端显示 -->
+          <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+            <i class="layui-icon layui-icon-spread-left"></i>
+          </li>
+          <li class="layui-nav-item layui-hide-xs"><a href="#top">首页</a></li>
+          <li class="layui-nav-item"><a href="chasmx.html">Chasm X</a></li>
+          <li class="layui-nav-item"><a href="abyss.html">Abyss</a></li>
+          <li class="layui-nav-item"><a href="yuniverse.html">YUniverse</a></li>
+        </ul>
+        <ul class="layui-nav layui-layout-right layui-bg-red">
+          <li class="layui-nav-item">
+           <a href="javascript:;">导航</a>
+           <dl class="layui-nav-child">
+             <dd><a href="#jianjie">简介</a></dd>
+              <dd><a href="#pinpai">品牌与领域</a></dd>
+              <dd><a href="#QQ">QQ</a></dd>
+              <dd><a href="#tuandui">我们的团队</a></dd>
+              <dd><a href="#video">宣传片</a></dd>
+              <dd><a href="#time">时间线</a></dd>
+              <dd><a href="#thank">致谢</a></dd>
+           </dl>
+          </li>
+          <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+            <a href="javascript:;">
+              <i class="layui-icon layui-icon-more-vertical"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <div class="layui-card layui-panel">
+   <div class="layui-card-body">
+    <div>
+      <br><br><br><br>
+      <h1 align="right" style="font-size:50px; color: rgb(255, 0, 0);">CXAY工作室</h1>
+      <br>
+      <h1 align="right" style="color: rgba(255, 29, 29, 0.904);">新年快乐！！！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chasm X Abyss YUniverse Group</h1>
+      <h3 align="right" style="color: rgba(180, 0, 0, 0.712);">——Happy New Year！！！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;漫漫人生路，相知有几人</h3>
+      <br>
+      <h2 align="right"><a href="https://shequ.codemao.cn/work_shop/19149" target="_blank">编程猫平台工作室</a></h2>
+      <br>
+      <h3 align="right" style="color: rgba(175, 0, 0, 0.712);">___________________________________________________________</h3>
+      <h3 align="right" style="color: rgba(255, 0, 0, 0.712);">_____________________________________________________________________________</h3>
+      <br>
+   </div>
+     <div class="layui-carousel" id="ID-carousel-demo-1">
+      <div carousel-item>
+        <div align="center"><img src="img/CXAY徽标+红灯笼.png" style="height: 100%;"></div>
+        <div align="center" style="color: rgb(238, 0, 0);"></br></br></br></br></br></br></br><h1>新春快乐！</h1></br><h1>祝大家龙行龘龘，龙腾虎跃！</h1></div>
+        <div align="center"><img src="img/CXAY圆形彩色.png" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br><h1>我们，在路上，勿忘初心。</h1></br><h1>找寻最初的梦想和微弱的希望。</h1></div>
+        <div align="center""><img src="img/CXAY简约经典.png" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br></br><h1>漫漫人生路，相识有几人。</h1></div>
+        <div align="center"><img src="img/CX彩色风车无底.png" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br><h1>任尘世繁华，唯有守护你的一切，</h1></br><h1>才是我此生唯一的使命。</h1></div>
+        <div align="center"><img src="img/CXAY蓝色.png" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br><h1>星河皆是你，所念皆星河。</h1></div>
+        <div align="center"><img src="img/AB橙框.png" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br><h1>跃入人海，各有风雨灿烂。</h1></div>
+        <div align="center"><img src="img/YU红色声纹.png" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br><h1>人生如戏，全靠演技。</h1></div>
+        <div align="center"><img src="img/CHASM蓝色经典.png" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br><h1>人生若只如初见————</h1></div>
+        <div align="center"><img src="img/YU红色.png" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br><h1>山河远阔，人间烟火。</h1></div>
+      </div>
+     </div>
+     <div>
+       <div>
+         <table align="center" width="75%" height="100" align="center" border="1px">
+           </br>
+           <tr align="center" height="36">
+             <th colspan="3" style="font-size: 15px;">前言</th>
+           </tr>
+           <tr height="36">
+             <th>梦开始的地方</th>
+             <th>积极进取</th>
+             <th>星辰大海</th>
+           </tr>
+           <tr align="center" height="36">
+             <td>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22年寒假期间我在编程</br>猫平台上开辟了一片属于我</br>自己的天地。在那里，我做</br>了自己的作品，创建了自己</br>的团队(现在有三人)
+             </td>
+             <td>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在23年初，我不断宣传</br>我的工作室及集团努力去组</br>件自己的团队。把作品做到</br>最好，坚持“
+               既然来了就做</br>&nbsp;&nbsp;&nbsp;到最好 ”的原则，努力进取。</td>
+             <td>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23年，非同寻常的一年</br>这一年已经快过去了一半时</br>间了。展望未来，拥有自己</br>的团队、创建自己的官网并</br>取得优异的成绩，美好的未</br>来。我们的星辰大海……&nbsp;&nbsp;&nbsp;
+             </td>
+           </tr>
+         </table>
+         <a name="jianjie"><br></a>
+       </div>
+     </div>
+   </div>
+ </div>
+ <blockquote class="layui-elem-quote layui-text ">
+   <div align="center"><h1>——我们是 CXAY Group——</h1></div>
+ </blockquote>
+  <div class="layui-card layui-panel">
+    <div class="layui-card-body">
+      <div class="layui-carousel" id="ID-carousel-demo-1"></div>
+      <div>
+        <h2 align="center" style="color: rgba(66, 66, 66, 0.904);">——Chasm X Abyss YUniverse Group——</h2>
+        <br>
+        <h3 align="center" style="color: rgba(100, 100, 100, 0.712);">漫漫人生路，相知有几人</h3>
+        <br>
+        <div align="center"><img src="img/CXAY简约经典.png" style="height: 100%;" align="center"></div>
+        <br>
+        <h1 align="center" style="color: rgb(45, 79, 99);">工作室创于2023年初</h1>
+        <br>
+        <h6 align="center">归属于逐梦集团</h6>
+        <a name="pinpai"><br></a>
+     </div>
+    </div>
+   </div>
+   <blockquote class="layui-elem-quote layui-text">
+     <div align="center"><h1>——品牌与领域——</h1></div>
+   </blockquote>
+   <div class="layui-card layui-panel">
+    <div class="layui-card-body">
+      <div class="layui-carousel" id="ID-carousel-demo-1"></div>
+      <div>
+        <h1><div align="left" style="color: rgb(53, 84, 105);"><img src="img/CX彩色风车无底.png" style="height: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chasm&nbsp;&nbsp;&nbsp;X&nbsp;&nbsp;————&nbsp;&nbsp;电脑操作系统品牌</div></h1>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电脑，是人们用于交流与生活的工具；操作系统，则是让人操作电脑这工具的法宝。我们的品牌起源于2023年初，秉着“既然来了，就做到最好！”的基本原则创编系统。Chasm first OS是我们品牌由创始人独立开发的一款操作系统，也是该品牌第一款电脑操作系统，目前程序员们正在开发新的电脑操作系统。</h3>
+        <hr>
+        <br>
+        <h1><div align="right" style="color: rgb(53, 84, 105);">Abyss&nbsp;&nbsp;————&nbsp;&nbsp;手机操作系统品牌<img src="img/AB橙框little.png" style="font-size: 500px;"></div></h1>
+        <h3 align="right" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同电脑一样，手机也是人们交流的工具，而我们，则是让人们交流变得更加方便与快捷。</h3>
+        <br>
+        <hr>
+        <br>
+        <h1><div align="left" style="color: rgb(53, 84, 105);"><img src="img/YU红色.png" style="height: 100%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YUniverse&nbsp;&nbsp;————&nbsp;&nbsp;软件与娱乐</div></h1>
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宇宙，是一个神奇的空间；而我们，则是在新兴的元宇宙中开辟一片属于我们的新天地。</h3>
+        <a name="QQ"><br></a>
+      </div>
+    </div>
+   </div>
+   <blockquote class="layui-elem-quote layui-text">
+     <div align="center"><h1>——联系or加入我们——</h1></div>
+   </blockquote>
+   <div class="layui-card layui-panel">
+    <div class="layui-card-body">
+      <div class="layui-carousel" id="ID-carousel-demo-1"></div>
+      <div>
+        <table align="center" width="75%" height="100px" align="center" border="1px">
+        </br>
+        <tr align="center" height="36">
+          <th colspan="3" style="font-size: 15px;">QQ</th>
+        </tr>
+        <tr height="36">
+          <th>CXAY工作室群</th>
+          <th>逐梦集团群</th>
+          <th>QQ/邮箱</th>
+        </tr>
+        <tr align="center" height="36">
+          <td>
+            <img src="img/CXAY工作室QQ群.jpg" style="height: 600px;">
+          </td>
+          <td>
+            <img src="img/集团QQ群.jpg" style="height: 600px;">
+          <td align="left">
+            <h1>室长QQ:</h1><br><h1>2174172727</h1>
+            <hr>
+            <h1>室长邮箱：</h1><br><h1>2174172727@qq.com</h1>
+            <hr>
+            <h1>副室长QQ:</h1><br><h1>1283595890</h1>
+            <hr>
+            <h1>副室长邮箱：</h1><br><h1>1283595890@qq.com</h1>
+          </td>
+        </tr>
+      </table>
+        <a name="tuandui"><br></a>
+      </div>
+     </div>
+    </div>
+        <blockquote class="layui-elem-quote layui-text">
+          <div align="center"><h1>——我们的团队——</h1></div>
+        </blockquote>
+        <div class="layui-card layui-panel">
+          <div class="layui-card-body">
+            <div class="layui-carousel" id="ID-carousel-demo-1"></div>
+            <div>
+              <table align="center" width="20%" height="20px" align="center" border="1px">
+              </br>
+              <tr align="center" height="36">
+                <th colspan="5" style="font-size: 15px;">我们的团队</th>
+              </tr>
+              <tr height="36">
+                <th>室长</th>
+                <th>副室长</th>
+                <th>程序员</th>
+                <th>成员</th>
+                <th>成员</th>
+              </tr>
+              <tr align="center" height="36">
+                <td>
+                  <br>
+                  <img src="img/Cui Yuxuan头像.jpeg" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>山隹</h2>
+                  <hr>
+                  <h3 style="color: rgb(48, 101, 131);">山河远阔，人间烟火。</h3>
+                </td>
+                <td>
+                  <br>
+                  <img src="img/wanys头像.jpg" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>wanys</h2>
+                  <hr>
+                  <h4 style="color: rgb(131, 102, 48);">打表出样例，暴力出奇迹</h4>
+                </td>
+                <td>
+                  <br>
+                  <img src="img/QV93头像.jpg" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>小福QV93</h2>
+                  <hr>
+                  <h3 style="color: rgb(48, 131, 80);">少年不惧岁月长</h3>
+                </td>
+                <td>
+                  <br>
+                  <img src="img/子非秋月头像.jpeg" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>子非秋月</h2>
+                  <hr>
+                  <h4 style="color: rgb(190, 182, 62);">使生如夏花之灿烂，死如秋叶之静美</h4>
+                </td>
+                <td>
+                  <br>
+                  <img src="img/ResponsibilityCXAY头像.jpg" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>ResponsibilityCXAY</h2>
+                  <hr>
+                  <h3 style="color: rgb(98, 48, 131);">青春无畏，逐梦扬威。</h3>
+                </td>
+              </tr>
+              <tr align="center" height="36">
+                <th colspan="4" style="font-size: 15px;"></th>
+              </tr>
+              <tr height="36">
+                <th>程序员</th>
+                <th>程序员</th>
+                <th>室长小号</th>
+                <th>管理&程序员</th>
+                <th>助手</th>
+              </tr>
+              <tr align="center" height="36">
+                <td>
+                  <br>
+                  <img src="img/懂事的挠挠熊DjIj头像.png" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>CGAQ</h2>
+                  <hr>
+                  <h3 style="color: rgb(131, 48, 69);">一笑解千愁</h3>
+                </td>
+                <td>
+                  <br>
+                  <img src="img/avatar_300x300_01.jpg" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>KGQ</h2>
+                  <hr>
+                  <h3 style="color: rgb(206, 223, 130);">人间烟火</h3>
+                </td>
+                <td>
+                  <br>
+                  <img src="img/小号.jpg" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>Gloomy_CXAY</h2>
+                  <hr>
+                  <h3 style="color: rgb(184, 161, 199);">CXAY小号</h3>
+                </td>
+                <td>
+                  <br>
+                  <img src="img/管理&程序员.png" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>Chase_Dream_CXAY</h2>
+                  <hr>
+                  <h3 style="color: rgb(131, 98, 48);">没有规矩，不成方圆。</h3>
+                </td>
+                <td>
+                  <br>
+                  <img src="img/懂事的挠挠熊DjIj头像.png" style="height: 200px;">
+                  <br>
+                  <hr>
+                  <h2>X_CXAY</h2>
+                  <hr>
+                  <h3 style="color: rgb(118, 141, 17);">予人玫瑰，手有余香。</h3>
+                </td>
+              </tr>
+            </table>
+           </div>
+          </div>
+          <a name="video"><br></a>
+         </div>
+         <blockquote class="layui-elem-quote layui-text">
+           <div align="center"><h1>——宣传片——</h1></div>
+         </blockquote>
+         <div class="layui-card layui-panel">
+           <div class="layui-card-body">
+             <div class="layui-carousel" id="ID-carousel-demo-1"></div>
+             <div align="center">
+               <h2 align="center">——请欣赏——</h2>
+               <br>
+               <video src="video/CXAY工作室宣传片第二版（低画质）.mp4" preload="auto" poster="img/CXAY徽标.png" controls="controls"></video>
+               <div class="layui-btn-container">
+                <a href="cxayvl.html" target="_blank">
+                  <button type="button" class="layui-btn">
+                    历史版本 <i class="layui-icon layui-icon-time layui-font-12"></i>
+                  </button>
+                </a>
+               </div>
+            </div>
+           </div>
+           <a name="time"><br></a>
+          </div>
+          <blockquote class="layui-elem-quote layui-text">
+            <div align="center"><h1>——工作室时间线——</h1></div>
+           </blockquote>
+            <div class="layui-card layui-panel">
+             <div class="layui-card-body">
+               <div class="layui-carousel" id="ID-carousel-demo-1"></div>
+          <div class="layui-timeline">
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2023年9-10月,CXAY Group 又迎来新一批员工，HTML作品上线，官网不断完善，稳步发展。</div>
+              </div>
+            </div>
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2023年9月,开学季来临，CXAY Group 产品及官网制作受阻，发展速度持续减缓。</div>
+              </div>
+            </div>
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-fire"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2023年8月,CXAY Group 迎来新一批员工；工作室官网更新，上线新程序；工作室稳步上升。</div>
+              </div>
+            </div>
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-fire"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2023年6月底-7月,CXAY Group 迎来新员工,工作室官网不断完善,C++程序也陆续上线，工作室进入巅峰时期。</div>
+              </div>
+            </div>
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-face-smile"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2023年上半年,CXAY Group 正式归属于逐梦集团，平台官网也正式上线并不断更新,编程猫平台上发布更多作品。</div>
+              </div>
+            </div>
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2023年6月,CXAY Group QQ群正式组建。</div>
+              </div>
+            </div>
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-face-cry"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2023年上半年,CXAY Group 十分冷清，没有新的成员。</div>
+              </div>
+            </div>
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-face-smile"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2023年初,CXAY Group 在编程猫平台创立工作室,正式成为正规体系。</div>
+              </div>
+            </div>
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-timeline-axis layui-icon-circle"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">2022年7月,CXAY Group 首个作品发布于编程猫平台,并在年末发布首个电脑操作系统。</div>
+              </div>
+            </div>
+            <div class="layui-timeline-item">
+              <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop layui-timeline-axis"></i>
+              <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">最初,CXAY Group 在人山人海的世界中孵化。</div>
+              </div>
+            </div>
+          </div>
+             </div>
+            </div>
+            
+            <a name="thank"><br></a>
+      <div>
+       <blockquote class="layui-elem-quote layui-text">
+        <div align="center"><h1>——致谢——</h1></div>
+       </blockquote>
+        <div class="layui-card layui-panel">
+         <div class="layui-card-body">
+           <div class="layui-carousel" id="ID-carousel-demo-1"></div>
+           <div>
+            <h2 align="center" style="color: rgb(145, 184, 209);">——一路同行，感谢有你——</h2>
+            <h1 align="center"><img src="img/一路同行，感谢有你（透明）.png"></h1>
+            <h4 align="center">致谢：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://layui.dev/" target="_blank">Layui</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://shequ.codemao.cn/" target="_blank">编程猫</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.logosc.cn/" target="_blank">标小智</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.bitbug.net/" target="_blank">比特虫</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mingrisoft.com/" target="_blank">明日科技</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mail.qq.com/" target="_blank">QQ邮箱</a></h4>
+            <h6 align="center">版权所有&nbsp;&nbsp;©CXAY-Group</h6>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
 </body>
 <script>
   console.log(new Date());
