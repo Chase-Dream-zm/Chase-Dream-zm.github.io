@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>我的家乡—潍坊</title>
+  <link rel="shortcut icon" href="img/潍坊电视台标.ico" type="image/x-icon">
+  <style>
+    a {
+      text-decoration: none;
+    }
+    a:visited {
+      color: rgb(53, 53, 53);
+    }
+    a:hover {
+      color: rgb(115, 192, 255);
+    }
+  </style>
+</head>
+<body>
+  <div>
+      <p>
+          <h3 style="color: rgba(29, 108, 255, 0.904);">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;潍坊风筝
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="我的家乡.html">首页</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="潍坊美食.html">潍坊美食</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#top">潍坊风筝</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="潍坊景点.html">潍坊景点</a>
+          </h3>
+      </p>
+  </div>
+  <hr>
+  <h1 align="center">——潍坊风筝——</h1>
+  <hr width="1000">
+  <div align="center">
+    <h2>——潍坊风筝会——</h2>
+    <p>
+      <h5>潍坊风筝节（会）每年四月的第三个周六在潍坊举行；</h5>
+      <h5>有来自世界各地的30多个国家和地区参赛，是我国最早冠以”国际”并被国际社会承认的大型地方节
+
+会；</h5>
+      <h5>从1984年,已成功举办过三十八届，其创立的“风筝牵线、文体搭台、经贸唱戏”的模式，被全国各地
+
+广为借鉴。</h5>
+      <img src="img/风筝.jpeg" width="800" height="90%">
+    </p>
+  </div>
+  <hr width="1000">
+  <div align="center">
+    <h2>——世界风筝都纪念广场——</h2>
+    <p>
+      <h5>以“风筝文化、民俗文化、人文文化”为主题规划设计的纪念广场；</h5>
+      <h5>是潍坊城市建设史上的新亮点，展现风筝都形象的标志性景观；</h5>
+      <h5>整个广场通过吉祥大道、鸢标广场等十大景观，追颂历史，咏颂现在，展颂未来。</h5>
+      <img src="img/风筝广场2.jpg" width="800" height="90%">
+    </p>
+  </div>
+</body>
