@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>我的家乡—潍坊</title>
+  <link rel="shortcut icon" href="img/潍坊电视台标.ico" type="image/x-icon">
+  <style>
+    a {
+      text-decoration: none;
+    }
+    a:visited {
+      color: rgb(53, 53, 53);
+    }
+    a:hover {
+      color: rgb(115, 192, 255);
+    }
+  </style>
+</head>
+<body>
+  <div>
+      <p>
+          <h3 style="color: rgba(29, 108, 255, 0.904);">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;潍坊美食
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="我的家乡.html">首页</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#top">潍坊美食</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="潍坊风筝.html">潍坊风筝</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="潍坊景点.html">潍坊景点</a>
+          </h3>
+      </p>
+  </div>
+  <hr>
+  <h1 align="center">——潍坊美食——</h1>
+  <hr width="1000">
+  <div align="center">
+    <h2>——朝天锅——</h2>
+    <p>
+      <h5>【朝天锅】 在外行人看来,朝天锅不就是饼卷肉吗?</h5>
+      <h5>但是当你真正去吃的时候,你会发现很有讲究,</h5>
+      <h5>首先这个饼,它是那种薄薄的,然后配上煮熟后的猪头肉猪肠等,把它切好放进去,然后还有一碗汤。
+
+</h5>
+      <h5>当然吃朝天锅最灵魂的还要配上大葱,喝着鲜汤,吃着卷肉再来一口大葱,肉肥而不腻,汤清淡而不浑浊,
+
+加以薄饼卷食,想想就流口水。</h5>
+      <img src="img/朝天锅.jpg" width="800" height="90%">
+    </p>
+  </div>
+  <hr width="1000">
+  <div align="center">
+    <h2>——肉火烧——</h2>
+    <p>
+      <h5>【潍坊肉火烧】 榜首毫无争议,应该给潍坊的肉火烧,</h5>
+      <h5>当地人喜欢称为“潍县肉火烧”也有直接叫“火烧“的。</h5>
+      <img src="img/肉火烧.jpg" width="800" height="90%">
+    </p>
+  </div>
+</body>
