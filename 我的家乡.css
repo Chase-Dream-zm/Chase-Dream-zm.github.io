@@ -1,0 +1,37 @@
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family:楷体;
+}
+a:visited {
+  color: rgb(53, 53, 53);
+  font-size: 20px;
+  font-family:楷体;
+}
+a:hover {
+  color: rgb(115, 192, 255);
+  font-size: 20px;
+  font-family:楷体;
+}h1{
+    box-align:"center";
+    color:rgba(16, 16, 88, 0.904);
+    font-family:仿宋;
+}
+h2{
+    box-align:"center";
+    color:rgba(16, 62, 88, 0.904);
+    font-family:仿宋;
+}
+h5{
+    box-align:"center";
+    color:rgba(59, 72, 100, 0.904);
+    font-family:楷体;
+    font-size: 18px;
+}
+h4{
+    box-align:"center";
+    color:rgba(30, 33, 39, 0.904);
+    font-family:楷体;
+    font-size: 20px;
+}
