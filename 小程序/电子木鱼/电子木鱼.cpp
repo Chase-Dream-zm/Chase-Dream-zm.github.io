@@ -1,12 +1,18 @@
 #include <windows.h>
-#define MFISH  0000
-#define PICK   0001
-#define ONE    0002
-#define NOONE  0003
-#define GD     0004
-#define WHITEB 0005
-#define CHTH   0006
-#define CHGN   0007
+#include <bits/stdc++.h>
+#define MFISH   0000
+#define PICK    0001
+#define INNUM   0002
+#define ALLNUM  0003
+#define GD      0004
+#define WHITEB  0005
+#define CHTH    0006
+#define CHGN    0007
+#define ALLPICK 0008
+#define NUMADD  0010
+#define INPUT   0011
+#define ADD     0012
+char* numm="";
 void printlog(char * L) {
 	OutputDebugStringA(L);
 }
@@ -17,17 +23,22 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 	WNDCLASS wndclass;
 	switch(Message) {
 		case WM_CREATE: {
-			CreateWindow(TEXT("BUTTON"), TEXT("电子木鱼"), WS_CHILD|WS_VISIBLE|BS_GROUPBOX, 0, 0, 300, 200, hWnd, (HMENU)MFISH, NULL, NULL);
-			CreateWindow(TEXT("STATIC"), TEXT("点击："), WS_CHILD|WS_VISIBLE, 20, 25, 90, 20, hWnd, (HMENU)PICK, NULL, NULL);
-			CreateWindow(TEXT("STATIC"), TEXT("+1"), WS_CHILD|WS_VISIBLE, 0, 0, 0, 0, hWnd, (HMENU)ONE, NULL, NULL);
-			CreateWindow(TEXT("STATIC"), TEXT(""), WS_CHILD|WS_VISIBLE, 0, 0, 0, 0, hWnd, (HMENU)NOONE, NULL, NULL);
+			CreateWindow(TEXT("BUTTON"), TEXT(""), WS_CHILD|WS_VISIBLE|BS_GROUPBOX, 5, 0, 300, 200, hWnd, (HMENU)MFISH, NULL, NULL);
+			CreateWindow(TEXT("STATIC"), TEXT("快速点击："), WS_CHILD|WS_VISIBLE, 20, 25, 90, 20, hWnd, (HMENU)PICK, NULL, NULL);
 			CreateWindow(TEXT("BUTTON"), TEXT("功德"), WS_CHILD|WS_VISIBLE, 20, 50, 100, 100, hWnd, (HMENU)GD, NULL, NULL);
-			CreateWindow(TEXT("STATIC"), TEXT(""), WS_CHILD|WS_VISIBLE, 130, 50, 22, 22, hWnd, (HMENU)WHITEB, NULL, NULL);
+			CreateWindow(TEXT("STATIC"), TEXT(" "), WS_CHILD|WS_VISIBLE, 130, 50, 9, 20, hWnd, (HMENU)ADD, NULL, NULL);
+			CreateWindow(TEXT("STATIC"), TEXT(" "), WS_CHILD|WS_VISIBLE, 139, 50, 80, 20, hWnd, (HMENU)WHITEB, NULL, NULL);
+			CreateWindow(TEXT("STATIC"), TEXT("1"), WS_CHILD|WS_VISIBLE, 0, 0, 0, 0, hWnd, (HMENU)NUMADD, NULL, NULL);
+			CreateWindow(TEXT("STATIC"), TEXT("数量/次："), WS_CHILD|WS_VISIBLE, 130, 80, 90, 20, hWnd, (HMENU)WHITEB, NULL, NULL);
+			CreateWindowEx(WS_EX_CLIENTEDGE, TEXT("EDIT"), NULL, WS_CHILD|WS_VISIBLE|WS_BORDER, 190, 80, 60, 20, hWnd, (HMENU)INNUM, NULL, NULL);
+			CreateWindow(TEXT("BUTTON"), TEXT("Input"), WS_CHILD|WS_VISIBLE, 250, 80, 40, 20, hWnd, (HMENU)INPUT, NULL, NULL);
 			CreateWindow(TEXT("STATIC"), TEXT("选择内容:"), WS_CHILD|WS_VISIBLE, 20, 160, 75, 22, hWnd, (HMENU)CHTH, NULL, NULL);
 			hCtrl=CreateWindow(TEXT("COMBOBOX"), NULL, WS_CHILD|WS_VISIBLE|WS_VSCROLL|CBS_AUTOHSCROLL|CBS_DROPDOWNLIST, 90, 160, 150, 90, hWnd, (HMENU)CHGN, NULL, NULL);
 			SendMessage(hCtrl, CB_ADDSTRING, 0, (LPARAM)TEXT("功德"));
+			SendMessage(hCtrl, CB_ADDSTRING, 0, (LPARAM)TEXT("情商"));
 			SendMessage(hCtrl, CB_ADDSTRING, 0, (LPARAM)TEXT("智商"));
 			SendMessage(hCtrl, CB_ADDSTRING, 0, (LPARAM)TEXT("体力"));
+			SendMessage(hCtrl, CB_ADDSTRING, 0, (LPARAM)TEXT("武力"));
 			SendMessage(hCtrl, CB_ADDSTRING, 0, (LPARAM)TEXT("人民币"));
 			break;
 		}
@@ -45,21 +56,29 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 					break;
 				}
 				case  GD : {
-					hwndTmp1 = GetDlgItem(hWnd, ONE);
+					hwndTmp1 = GetDlgItem(hWnd, NUMADD);
 					hwndTmp2 = GetDlgItem(hWnd, WHITEB);
+					hwndTmp = GetDlgItem(hWnd, ADD);
 					char ch1[2048];
 					GetWindowText(hwndTmp1,ch1,2048);
-					printlog(ch1);
-					SetWindowText(hwndTmp2, TEXT(ch1));
+					SetWindowText(hwndTmp2,ch1);
+					SetWindowText(hwndTmp,"+");
 					Sleep(100);
-					hwndTmp1 = GetDlgItem(hWnd, NOONE);
 					hwndTmp2 = GetDlgItem(hWnd, WHITEB);
-					char ch2[2048];
-					GetWindowText(hwndTmp1,ch2,2048);
-					printlog(ch2);
-					SetWindowText(hwndTmp2, TEXT(ch2));
+					SetWindowText(hwndTmp2," ");
+					SetWindowText(hwndTmp," ");
+					Sleep(100);
+					SetWindowText(GetDlgItem(hWnd, ALLNUM)," ");
 					break;
 				}
+				case  INPUT:{
+					hwndTmp1=GetDlgItem(hWnd,NUMADD);
+					hwndTmp2=GetDlgItem(hWnd,INNUM);
+					char ch1[2048];
+					GetWindowText(hwndTmp2,ch1,2048);
+					SetWindowText(hwndTmp1,ch1);
+					break;
+				} 
 			}
 		}
 //
@@ -104,8 +123,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	hwnd = CreateWindowEx(WS_EX_CLIENTEDGE,"电子木鱼","电子木鱼",WS_VISIBLE|WS_OVERLAPPEDWINDOW,
 	                      CW_USEDEFAULT, /* x */
 	                      CW_USEDEFAULT, /* y */
-	                      640, /* width */
-	                      480, /* height */
+	                      320, /* width */
+	                      235, /* height */
 	                      NULL,NULL,hInstance,NULL);
 
 	if(hwnd == NULL) {
