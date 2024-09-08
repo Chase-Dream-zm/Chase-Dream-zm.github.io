@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>8.7班官网</title>
+  <link rel="shortcut icon" href="img/8.7/七.ico" type="image/x-icon">
+  <link href="layui/css/layui.css" rel="stylesheet">
+  <script src="layui/layui.js"></script>
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: rgb(53, 53, 53);
+    }
+
+    a:hover {
+      color: rgb(115, 192, 255);
+    }
+  </style>
+</head>
+<body style="background-image:url(img/花朵蓝色背景.jpg);background-size: cover;background-attachment: fixed;">
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-header layui-bg-gray">
+        <div class="layui-logo layui-hide-xs layui-bg-green">8年级7班</div>
+        <!-- 头部区域（可配合layui 已有的水平导航） -->
+        <ul class="layui-nav layui-layout-left layui-bg-gray">
+          <!-- 移动端显示 -->
+          <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+            <i class="layui-icon layui-icon-spread-left"></i>
+          </li>
+          <li class="layui-nav-item layui-hide-xs"><a href="#top">首页</a></li>
+          <li class="layui-nav-item"><a href="8-7photo.html">班级相册</a></li>
+          <li class="layui-nav-item"><a href="8-7fengmao.html">班级风貌</a></li>
+          <li class="layui-nav-item"><a href="8-7classmate.html">成员集结</a></li>
+        </ul>
+      </div>
+    </div>
+  <br>
+  <br><br><br>
+  <br>
+  <br>
+  <h1 align="center">八年级七班</h1>
+  <h3 align="center" style="color: rgb(75, 123, 151);">青春无畏，逐梦扬威；激情澎湃，永不言败！</h3>
+  <br>
+  <br>
+  <div class="layui-card layui-panel">
+   <div class="layui-card-body">
+     <div class="layui-carousel" id="ID-carousel-demo-1">
+      <div carousel-item>
+        <div align="center"><img src="img/8.7/黄角绿字徽.jpg" style="height: 100%;"></div>
+        <div align="center" ></br></br></br></br></br></br></br></br></br><h1>八年七班</h1></br><h1>青春无畏，逐梦扬威；激情澎湃，永不言败！</h1></div>
+        <div align="center""><img src="img/8.7/粉徽.jpg" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br></br></br><h1>全力备战地生中考</h1></br><h1>努力考到双A</h1></div>
+        <div align="center""><img src="img/8.7/书法体绿徽.jpg" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br></br></br><h1>祝愿我们顶峰相见！</h1></div>
+        <div align="center""><img src="img/8.7/绿徽.jpg" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br></br></br><h1>少年不惧岁月长。</h1></div>
+        <div align="center""><img src="img/8.7/开学板报.jpg" style="height: 100%;"></div>
+        <div align="center"></br></br></br></br></br></br></br></br></br><h1>你好初二！</h1></div>
+      </div>
+     </div>
+   </div>
+  </div>
+</body>
+<script>
+  console.log(new Date());
+  //JS 
+  layui.use(['element', 'layer', 'util','carousel'], function () {
+    var element = layui.element
+     ,layer = layui.layer
+    ,util = layui.util
+    ,carousel = layui.carousel
+    ,$ = layui.$;
+    element.render('nav', 'demo-filter-nav');
+      // 渲染 - 常规轮播
+      carousel.render({
+        elem: '#ID-carousel-demo-1',
+        width: 'auto',
+        height: '500px'
+      });
+  });
+</script>
+</html>
